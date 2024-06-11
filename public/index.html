@@ -16,19 +16,21 @@
         <div id="home">
             <div class="w-full h-3/4">
                 <div class="w-full h-full flex flex-col absolute space-y-80 py-4 items-center">
-                    <input class=" border-none p-3 rounded-full shadow-sm" placeholder="San Francisco" type="search">
-                    <button class="w-36 rounded-full text-primary shadow-sm bg-white text-xl font-semibold p-3">Explorar</button>
+                    <input class=" border-none p-3 rounded-full shadow-sm transition duration-300 focus-within:shadow-sm focus:ring-2 focus:w-11/12" placeholder="San Francisco" type="search">
+                    <button class="w-36 rounded-full text-primary shadow-sm bg-white text-xl font-semibold p-3 transition-all duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:-translate-y-1 hover:scale-110">Explorar</button>
                 </div>
                 <div class="w-full h-full">
                     <img src="./img/sanFrancisco.jpg" alt="">
                 </div>
             </div>
         </div>
-        <div class="p-10 flex flex-row gap-3.5 " id="recomendadas">
+        <div class="p-6  " id="recomendados">
+            <p class="text-3xl font-semibold text-primary">Recomedados</p>
+            <div class=" w-auto h-72 items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-6">
             <div class="Card">
                 <div class="Card_Img bg-norway "></div>
                 <div class="Card_Desc bg-secondary ">
-                    <p class="Card_P1 text-white">Norway</p>
+                    <p class="Card_P1 text-white">Noruega</p>
                     <p class="Card_P2 text-white ">Paisajes Increíbles</p>
                 </div>
             </div>
@@ -39,6 +41,77 @@
                     <p class="Card_P2 text-terciary ">Jungla de Asfalto</p>
                 </div>
             </div>
+            <div class="Card">
+                <div class="Card_Img bg-yosemite "></div>
+                <div class="Card_Desc bg-secondary ">
+                    <p class="Card_P1 text-white">Yosemite</p>
+                    <p class="Card_P2 text-white ">Un descanso del mundo</p>
+                </div>
+            </div>
+            <div class="Card">
+                <div class="Card_Img bg-seattle "></div>
+                <div class="Card_Desc bg-white">
+                    <p class="Card_P1 text-terciary">Seattle</p>
+                    <p class="Card_P2 text-terciary ">La Gran ciudad</p>
+                </div>
+            </div>
+            <div class="Card">
+                <div class="Card_Img bg-switzerland "></div>
+                <div class="Card_Desc bg-secondary ">
+                    <p class="Card_P1 text-white">Suiza</p>
+                    <p class="Card_P2 text-white ">Un rincón para refugiarse</p>
+                </div>
+            </div>
+            <div class="Card">
+                <div class="Card_Img bg-center bg-sydney"></div>
+                <div class="Card_Desc bg-white">
+                    <p class="Card_P1 text-terciary">Sydney</p>
+                    <p class="Card_P2 text-terciary ">Cultura de Ópera</p>
+                </div>
+            </div>
+            <div class="Card">
+                <div class="Card_Img bg-center bg-europe "></div>
+                <div class="Card_Desc bg-secondary ">
+                    <p class="Card_P1 text-white">Europa</p>
+                    <p class="Card_P2 text-white ">Puerta Mágica</p>
+                </div>
+            </div>
+            <div class="Card">
+                <div class="Card_Img  bg-bali"></div>
+                <div class="Card_Desc bg-white">
+                    <p class="Card_P1 text-terciary">Bali</p>
+                    <p class="Card_P2 text-terciary ">Descanso Tropical</p>
+                </div>
+            </div>
+            <div class="Card">
+                <div class="Card_Img bg-chicago "></div>
+                <div class="Card_Desc bg-secondary ">
+                    <p class="Card_P1 text-white">Chicago</p>
+                    <p class="Card_P2 text-white ">Una ciudad electrizante</p>
+                </div>
+            </div>
+            <div class="Card">
+                <div class="Card_Img bg-center bg-iceland"></div>
+                <div class="Card_Desc bg-white">
+                    <p class="Card_P1 text-terciary">Islandia</p>
+                    <p class="Card_P2 text-terciary ">Naturaleza Eterea</p>
+                </div>
+            </div>
+            <div class="Card">
+                <div class="Card_Img bg-center bg-LA "></div>
+                <div class="Card_Desc bg-secondary ">
+                    <p class="Card_P1 text-white">Los Ángeles</p>
+                    <p class="Card_P2 text-white ">Glamour y Flashes</p>
+                </div>
+            </div>
+            <div class="Card">
+                <div class="Card_Img bg-center bg-miami"></div>
+                <div class="Card_Desc bg-white">
+                    <p class="Card_P1 text-terciary">Miami</p>
+                    <p class="Card_P2 text-terciary ">Un lugar de contrastes</p>
+                </div>
+            </div>
+        </div>
         </div>
         <div id="restas_destacadas"></div>
         <div id="faq"></div>

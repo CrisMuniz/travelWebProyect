@@ -4,11 +4,11 @@
 @tailwind utilities;
 
 .Card {
-    @apply w-48 h-64 shadow-md rounded-lg
+    @apply w-48 h-64 shadow-md rounded-lg flex-none
 }
 
 .Card_Img {
-    @apply w-full h-3/5 rounded-t-lg bg-cover
+    @apply w-full h-3/5 rounded-t-lg bg-cover 
 }
 
 .Card_Desc {
