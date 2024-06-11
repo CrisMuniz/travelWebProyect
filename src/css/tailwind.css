@@ -22,3 +22,7 @@
 .Card_P2 {
     @apply text-base px-4
 }
+
+.CardTitle {
+    @apply text-3xl px-8 pt-8 pb-2 font-semibold text-white
+}
