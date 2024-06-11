@@ -2,3 +2,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.Card {
+    @apply w-48 h-64 shadow-md rounded-lg
+}
+
+.Card_Img {
+    @apply w-full h-3/5 rounded-t-lg bg-cover
+}
+
+.Card_Desc {
+    @apply w-full h-2/5 rounded-b-lg
+}
+
+.Card_P1 {
+    @apply text-xl font-bold px-4 py-2
+}
+
+.Card_P2 {
+    @apply text-base px-4
+}
