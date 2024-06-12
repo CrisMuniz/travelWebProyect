@@ -6,13 +6,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e0b0ec00f6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../public/css/tailwind.css">
     <title>Travel Web </title>
 </head>
 <body class="font-Montserrat">
     <nav></nav>
     <div id="tab_bar"></div>
-    <section class="w-full h-screen">
+    <section class="w-full h-auto">
         <div id="home">
             <div class="w-full h-3/4">
                 <div class="w-full h-full flex flex-col absolute space-y-80 py-4 items-center">
@@ -134,8 +135,43 @@
                 </div>
             </div>
         </div>
-        <div id="faq"></div>
+        <div class="w-full h-full px-6" id="faq">
+            <div class="w-full h-full  flex flex-col space-y-4">
+                <p class="text-3xl text-primary font-semibold mt-6">FAQS</p>
+                <div>
+                    <p class="text-xl font-semibold text-primary">Política de Cancelación</p>
+                    <p class=" font-medium pt-2 ">Para estancias menores a una semana es importante avisar con 3 días de anticipación, de caso contario será sancionado.</p>
+                </div>
+                <div>
+                    <p class="text-xl font-semibold text-primary">Métodos de Pago</p>
+                    <p class=" font-medium pt-2 ">Aceptamos distintos métodos de pago: VISA, MasterCard, American Express, Paypal y Bizum.</p>
+                </div>
+                <div>
+                    <p class="text-xl font-semibold text-primary">Mascotas</p>
+                    <p class=" font-medium pt-2 ">El tema de las mascotas dependerá directamente del anfitrión.</p>
+                </div>
+                <div>
+                    <p class="text-xl font-semibold text-primary">Información de Seguridad</p>
+                    <p class=" font-medium pt-2 ">Todas nuestras estancias cuentan con seguro en caso de accidentes.</p>
+                </div>
+                <div>
+                    <p class="text-xl font-semibold text-primary">Estancias Largas</p>
+                    <p class=" font-medium pt-2 ">Contamos con estancias de hasta 3 meses, en este caso es requerido un anticipo con un monto del 50% del valor de la renta.<p>
+                </div>
+            </div>
+        </div>
     </section>
-    <footer></footer>
+    <footer class="w-full h-auto bg-gray-50 p-6 space-y-2 ">
+        <h2 class="text-lg">Acerca de</h2>
+        <p class="text-sm text-gray-300">Inversionistas</p>
+        <p class="text-sm text-gray-300">Empleos</p>
+        <p class="text-sm text-gray-300">Términos y Condiciones</p>
+        <p class="text-sm text-gray-300">Travel Web, Inc.</p>
+        <p class="text-sm text-gray-300">Síguenos</p>
+        <div class="flex items-center space-x-3 text-gray-300">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+    </footer>
 </body>
 </html>
