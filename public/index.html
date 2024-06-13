@@ -11,23 +11,45 @@
     <title>Travel Web </title>
 </head>
 <body class="font-Montserrat">
-    <nav></nav>
+    <nav class="w-full h-14 hidden bg-white lg:flex p-4 justify-between fixed z-10">
+        <div class="h-auto w-auto">
+            <p class="text-xl text-primary font-black">Travel Web</p>
+        </div>
+        <div class="flex space-x-8">
+            <a class="font-bold text-base text-primary" href="#home">Inicio</a>
+            <a class="font-bold text-base text-primary" href="#recomendados">Recomendados</a>
+            <a class="font-bold text-base text-primary" href="#rentas_destacadas">Rentas</a>
+            <a class="font-bold text-base text-primary" href="#faq">FAQS</a>
+            <a class="font-bold text-base text-primary" href="#sobre_nos">Sobre Nosotros</a>
+        </div>
+        <div class="flex space-x-4">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="currentColor" class="size-7 stroke-red">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="currentColor" class="size-7 stroke-gray fill-gray">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="currentColor" class="size-7 stroke-gray fill-gray">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+            </svg>
+        </div>
+    </nav>
     <section class="w-full h-auto">
-        <div id="home">
-            <div class="w-full h-3/4">
+        <div class="lg:w-full lg:h-screen" id="home">
+            <div class="w-full h-3/4 lg:h-full">
                 <div class="w-full h-full flex flex-col absolute space-y-80 py-4 items-center lg:space-y-0 lg:items-start lg:pt-20 lg:justify-start">
                     <input class=" border-none p-3 rounded-full shadow-sm transition duration-300 focus-within:shadow-sm focus:ring-2 focus:w-11/12 lg:hidden" placeholder="San Francisco" type="search">
-                    <div class="hidden h-auto lg:w-2/5 lg:flex pb-6">
+                    <div class="hidden h-auto lg:w-2/5 lg:flex pb-6 lg:pt-40">
                         <p class="text-4xl ml-16 font-bold text-black">Encuentra más ubicaciones como esta</p>
                     </div>
                     <button class="w-48 rounded-full text-primary shadow-sm bg-white text-lg font-semibold p-3 transition-all duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:-translate-y-1 hover:scale-110 lg:ml-16">Explorar</button>
                 </div>
-                <div class="w-full h-full lg:h-96 lg:bg-sanFranciscoDesktop lg:bg-cover lg:bg-center">
+                <div class="w-full h-full lg:h-full lg:bg-sanFranciscoDesktop lg:bg-cover lg:bg-center">
                     <img class="lg:hidden" src="./img/sanFrancisco.jpg" alt="">
                 </div>
             </div>
         </div>
-        <div class="p-6  " id="recomendados">
+        <div class="p-6 lg:pt-14" id="recomendados">
             <p class="text-3xl font-semibold text-primary">Recomedados</p>
             <div class=" w-auto h-72 items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-6 overflow-y-hidden">
             <div class="Card">
@@ -116,7 +138,7 @@
             </div>
         </div>
         </div>
-        <div class="px-2 h-auto w-full lg:px-6" id="rentas_destacadas">
+        <div class="px-2 h-auto w-full lg:px-6 lg:pt-14" id="rentas_destacadas">
             <p class="text-3xl text-primary font-semibold pb-6 mt-6 ">Rentas Destacadas</p>
             <div class="w-full h-full flex flex-col space-y-6 item-center justify-center lg:grid lg:grid-cols-2 lg:grid-rows-3 lg:gap-3 lg:space-y-2">
                 <div class="w-full h-96 bg-chicago bg-cover bg-center rounded-xl lg:col-span-2 lg:row-span-1 lg:bg-center">
@@ -163,8 +185,8 @@
             </div>
         </div>
     </section>
-    <footer class="w-full h-auto bg-gray-50 p-6 space-y-2 ">
-        <h2 class="text-lg text-gray-500 font-light">Acerca de</h2>
+    <footer class="w-full h-auto bg-gray-50 p-6 space-y-2 " id="sobre_nos">
+        <h2 class="text-lg text-gray-500 font-light">Sobre Nosotros</h2>
         <p class="TextFooter">Inversionistas</p>
         <p class="TextFooter">Empleos</p>
         <p class="TextFooter">Términos y Condiciones</p>
