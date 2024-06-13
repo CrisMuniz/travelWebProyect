@@ -30,6 +30,14 @@ module.exports = {
         secondary: "#8FA206",
         terciary: "#61AEC9",
       },
+      stroke: {
+        red: "#CC2D4A",
+        gray: "#D1D5DB",
+      },
+      fill: {
+        red: "#CC2D4A",
+        gray: "#D1D5DB",
+      },
       fontFamily: {
         Montserrat: ["Montserrat", "sans-serif"],
       },
