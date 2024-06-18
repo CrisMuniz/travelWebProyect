@@ -7,11 +7,11 @@ También se ha incluido un dark mode, es totalmente responsive y como punto adic
 # Imagenes
 
 Estas son algunas de las sreenshots de la página:
-![Inicio] (./inicio.png)
+![Inicio] (/inicio.png)
 
-![DarkMode] (./darkmode.png)
+![DarkMode] (/darkmode.png)
 
-![Mobile] (./mobile.png)
+![Mobile] (/mobile.png)
 
 
 # Herramientas
