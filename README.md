@@ -5,11 +5,11 @@ También se ha incluido un dark mode, es totalmente responsive y como punto adic
 
 # Imagenes
 Estas son algunas de las sreenshots de la página:
-![Imagen de inicio] (/public/imgGit/inicio.png "Inicio de Página")
+![Imagen de inicio] (/imgGit/inicio.png "Inicio de Página")
 
-![Imagen de Darkmode] (/public/imgGit/darkmode.png "Dark Mode")
+![Imagen de Darkmode] (/imgGit/darkmode.png "Dark Mode")
 
-![Imagen de Móvil] (/public/imgGit/mobile.png "Vista Móvil")
+![Imagen de Móvil] (/imgGit/mobile.png "Vista Móvil")
 
 # Herramientas
 -Tailwind
