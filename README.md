@@ -7,7 +7,7 @@ También se ha incluido un dark mode, es totalmente responsive y como punto adic
 # Imagenes
 
 Estas son algunas de las sreenshots de la página:
-![Inicio] (./public/img/inicio.png)
+![Inicio] ([./public/img/inicio.png](https://github.com/CrisMuniz/travelWebProyect/blob/main/inicio.png))
 
 ![DarkMode] (/darkmode.png)
 
