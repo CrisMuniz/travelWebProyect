@@ -32,7 +32,7 @@
             </svg>
              </button>
              <button id="userBtn_dk">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="currentColor" class="size-7 stroke-gray fill-gray dark:stroke-white dark:fill-white">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="currentColor" id="userDesk" class="size-7 stroke-gray fill-gray dark:stroke-white dark:fill-white">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
             </svg>
         </button>
@@ -48,11 +48,11 @@
            <form class="max-w-sm mx-auto">
             <div>
                 <label for="email" class=" block mb-2 font-light text-base dark:text-white ">Your Email</label>
-                <input type="email" id="email" class="w-full bg-gray-50 border border-gray-200 text-gray-500 text-sm rounded-lg mb-2" placeholder="name@gmail.com" required>
+                <input type="email" class="w-full bg-gray-50 border border-gray-200 text-gray-500 text-sm rounded-lg mb-2" autocomplete="username" placeholder="name@gmail.com" required>
             </div>
             <div>
                 <label for="password" class=" block mb-2 font-light text-base dark:text-white">Your Password</label>
-                <input type="password" id="password" class="w-full bg-gray-50 border border-gray-200 text-gray-500 text-sm rounded-lg" placeholder="*****" required>
+                <input type="password"  class="w-full bg-gray-50 border border-gray-200 text-gray-500 text-sm rounded-lg" autocomplete="current-password" placeholder="****" required>
             </div>
             <button type="submit" class="text-white bg-primary font-medium rounded-lg text-sm w-full mt-3 shadow-sm hover:bg-[#d52936] hover:scale-105">Submit</button>
            </form>
@@ -238,7 +238,7 @@
               </svg>
         </a>
         <button id="user">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="currentColor" class="size-7 stroke-gray fill-gray dark:stroke-white dark:fill-white">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="currentColor" id="userMb" class="size-7 stroke-gray fill-gray dark:stroke-white dark:fill-white">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
               </svg>
         </button>
@@ -258,11 +258,11 @@
            <form class="max-w-sm mx-auto">
             <div>
                 <label for="email" class=" block mb-2 font-light text-base dark:text-white ">Your Email</label>
-                <input type="email" id="email" class="w-full bg-gray-50 border border-gray-200 text-gray-500 text-sm rounded-lg mb-2" placeholder="name@gmail.com" required>
+                <input type="email"  class="w-full bg-gray-50 border border-gray-200 text-gray-500 text-sm rounded-lg mb-2" autocomplete="username" placeholder="name@gmail.com" required>
             </div>
             <div>
                 <label for="password" class=" block mb-2 font-light text-base dark:text-white">Your Password</label>
-                <input type="password" id="password" class="w-full bg-gray-50 border border-gray-200 text-gray-500 text-sm rounded-lg" placeholder="*****" required>
+                <input type="password"  class="w-full bg-gray-50 border border-gray-200 text-gray-500 text-sm rounded-lg" autocomplete="current-password" placeholder="****" required>
             </div>
             <button type="submit" class="text-white bg-primary font-medium rounded-lg text-sm w-full mt-3 shadow-sm hover:bg-[#d52936] hover:scale-105">Submit</button>
            </form>
@@ -277,6 +277,8 @@
         const profileDesktop = document.querySelector('#profileDesktop');
         const userBtn_dk = document.querySelector('#userBtn_dk');
         const closeBtn_dk =document.querySelector('#closeBtn_dk');
+        let userDesk = document.querySelector('#userDesk');
+        let userMb =document.querySelector('#userMb');
 
         function toggleDarkMode () {
             document.documentElement.classList.toggle('dark')
@@ -286,17 +288,46 @@
             profileMobile.classList.toggle('hidden')
         }
 
-        function toggleUserDesktop () {
-            profileDesktop.classList.toggle('hidden')
+        function changeColorMb () {
+            if (profileMobile.classList.contains('hidden')){
+                userMb.style.fill='#D1D5DB';
+                userMb.style.stroke='#D1D5DB';
+
+            } else {
+                userMb.style.fill='#DC2626';
+                userMb.style.stroke='#DC2626';
+            }
         }
+
+        function toggleUserDesktop () {
+            profileDesktop.classList.toggle('hidden');
+        }
+
+        function changeColorDesk () {
+            if (profileDesktop.classList.contains('hidden')){
+                userDesk.style.fill='#D1D5DB';
+                userDesk.style.stroke='#D1D5DB';
+
+            } else {
+                userDesk.style.fill='#DC2626';
+                userDesk.style.stroke='#DC2626';
+            }
+        }
+
 
         toggle_btn.addEventListener('click', toggleDarkMode);
         toggle_btn_mb.addEventListener('click', toggleDarkMode);
 
         userBtn_mb.addEventListener('click',toggleUser );
         closeBtn_mb.addEventListener('click', toggleUser);
+        userBtn_mb.addEventListener('click', changeColorMb);
+        closeBtn_mb.addEventListener('click', changeColorMb);
         userBtn_dk.addEventListener('click', toggleUserDesktop);
-        closeBtn_dk.addEventListener('click', toggleUserDesktop)
+        closeBtn_dk.addEventListener('click', toggleUserDesktop);
+        userBtn_dk.addEventListener('click', changeColorDesk);
+        closeBtn_dk.addEventListener('click', changeColorDesk);
+
+
     </script>
 </body>
 </html>
