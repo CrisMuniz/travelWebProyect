@@ -6,9 +6,9 @@ También se ha incluido un dark mode, es totalmente responsive y como punto adic
 
 ## Imagenes
 
-![Inicio](./public/img/inicio.png);
-![Darkmode](./public/img/darkmode.png);
-![Mobile](./public/img/mobile.png);
+![Inicio](./docs/img/inicio.png);
+![Darkmode](./docs/img/darkmode.png);
+![Mobile](./docs/img/mobile.png);
 
 ## Herramientas
 
